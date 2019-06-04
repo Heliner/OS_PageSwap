@@ -1,3 +1,8 @@
+package gui;
+
+import swap.*;
+import util.FileUtil;
+import base.BaseSwapPage;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -11,6 +16,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
+import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -227,7 +233,8 @@ public class SwapUIController implements Initializable {
     }
 
     @FXML
-    void readFileAction(ActionEvent e) {
+    void readFileAction(ActionEvent e) throws IOException {
+
         fileInputList = FileUtil.readFile("F:\\java_IDEA\\AlogrithmAnalysis\\src\\list");
         this.curModel = FILE_INPUT_MODEL;
         curFileInputPointer = 0;

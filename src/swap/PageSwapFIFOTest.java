@@ -1,3 +1,5 @@
+package swap;
+
 import java.util.Scanner;
 
 public class PageSwapFIFOTest {

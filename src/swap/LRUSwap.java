@@ -1,10 +1,13 @@
+package swap;
+
+import base.BaseSwapPage;
 import org.junit.Test;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public  class LRUSwap extends BaseSwapPage{
+public  class LRUSwap extends BaseSwapPage {
     LinkedList<Integer> lruQueue = new LinkedList<>();
     static final Integer EMPTY_PLACE = -1;
 

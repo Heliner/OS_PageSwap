@@ -1,4 +1,6 @@
+package swap;
 
+import base.BaseSwapPage;
 import org.junit.Test;
 
 import java.util.ArrayList;
